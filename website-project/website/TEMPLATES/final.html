@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jokey</title>
+    <style>
+      body{
+        background-color: #cccccc;
+      }
+    </style>
+  </head>
+  <body>
+
+    <br>
+    <center><h5 name="joke">{{ jok }}</h5></center>
+    <br>
+    <form  action="{% url 'final' %}">
+      <center><input type="submit" class="btn btn-primary" value="Make me laugh one more time"></center>
+    </form>
+    <br>
+    <br>
+    <form  action="{% url 'home' %}">
+      <center><input type="submit" class="btn btn-primary" value="Country Road Take Me Home 🛸"></center>
+    </form>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <footer>
+        <center><h6>©Ninaad 2021(me duh)</h6></center>
+      </footer>
+
+  </body>
+</html>

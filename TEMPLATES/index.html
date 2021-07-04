@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jokey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+      body{
+        background-color: #cccccc;
+      }
+    </style>
+  </head>
+  <body>
+
+    <center><h1>Welcome to jokey 😂</h1></center>
+    <br>
+    <form  action="{% url 'final' %}" method="post">
+      {%csrf_token%}
+      <center><input type="submit" class="btn btn-primary" value="Tell me a Joke!"></center>
+      <footer>
+        <center><h6>©Ninaad 2021(me duh)</h6></center>
+      </footer>
+
+    </form>
+  </body>
+</html>
